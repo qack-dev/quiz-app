@@ -34,7 +34,7 @@
 
 このアプリケーションを動作させるには、以下の環境が必要です。
 
--   Webサーバー (Apache, Nginxなど)
+-   Linux Webサーバー (Apache, Nginxなど)
 -   PHP
 -   Python 3
 -   pip (Pythonパッケージインストーラ)
