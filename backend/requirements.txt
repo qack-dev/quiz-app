@@ -1,0 +1,6 @@
+Flask>=2.0
+requests>=2.20
+python-dotenv>=0.20
+Flask-Cors>=3.0
+gunicorn
+deepl>=1.15.0

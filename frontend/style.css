@@ -1,0 +1,187 @@
+/* General Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h1 {
+    color: #1c2a48;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn-start, .btn-menu, .btn-next, .btn-submit, .btn-answer {
+    display: inline-block;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 5px;
+}
+
+.btn-start {
+    background-color: #007bff;
+}
+.btn-start:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-menu {
+    background-color: #6c757d;
+}
+.btn-menu:hover {
+    background-color: #5a6268;
+}
+
+.btn-next {
+    background-color: #28a745;
+}
+.btn-next:hover {
+    background-color: #218838;
+}
+
+.btn-submit {
+    background-color: #17a2b8;
+    width: 100%;
+}
+.btn-submit:hover {
+    background-color: #138496;
+}
+
+/* Quiz Specific Styles */
+#quiz-container {
+    margin-top: 20px;
+}
+
+#question {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    min-height: 60px;
+}
+
+.answers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-answer {
+    background-color: #ffc107;
+    color: #212529;
+    width: 100%;
+}
+.btn-answer:hover {
+    background-color: #e0a800;
+}
+
+#result-area {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Important for padding */
+}
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Chart and Stats Styles */
+.chart-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#heatmap-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.heatmap-cell {
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    word-wrap: break-word; /* Prevent long words from overflowing */
+}
+
+.heatmap-cell strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    .answers-grid {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+}
